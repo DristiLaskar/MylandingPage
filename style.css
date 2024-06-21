@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+}
+.hero_section{
+    background-image: url("g2.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text_container{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-left: 16px;
+    font-weight: 100;
+    font-size: 19px;
+}
+.hi,.dev{
+    font-size: 70px;
+    color: rgb(113, 248, 11);
+}
+.text_container:hover{
+    transform: scale(1.1);
+    text-shadow: 10px 12px 10px #000;
+    transition: 0.6s ease-in-out;
+    
+}
+
+.box1{
+    background-color: black;
+    min-width: 50vh;
+    padding: 20px;
+}
+.box1 h2{
+    text-align: center;
+    color: rgb(113, 248, 11);
+    font-size: 70px;
+   
+}
+.you{
+    font-size: 96px;
+    font-weight: 400;
+    
+}
+.box1 h2:hover{
+    text-shadow: 20px 2px 20px rgb(27, 230, 244);
+    transition: 0.5s ease-in-out;
+    transform: scale(1.04);
+}
+.work{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    
+}
+.card{
+    max-width: 320px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(1, 1,1, 0.4);
+    margin-top: 20px;
+    
+    
+}
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_content{
+    padding: 20px;
+}
+.card_content p{
+    margin-top: 10px;
+}
+.card:hover{
+    transform: scale(1.04);
+    transition: 0.5s ease-in-out;
+    box-shadow: 5px 5px 25px rgb(2, 239, 251);
+}
+.bottom_section{
+    display: flex;
+    padding-top: 30px;
+}
+.contact{
+  
+    background-color: rgb(223, 23, 23);
+    color: white;
+    padding: 20px;
+}
+.about{
+  background-color: rgb(15, 15, 179);
+  color: white;
+  padding: 20px;
+}
+.about p, .contact p{
+   padding: 5PX;
+   font-size: 15px;
+   font-weight:lighter;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+@media(max-width:1024px){
+    .hero_section{
+        min-height: 50vh;
+    }
+    .text_container{
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 50px;
+        
+    }
+    .text_container h1,h2{
+        font-size: 20px;
+    }
+    .hi,.dev{
+        font-size: 50px;
+    }
+    .box1 h2{
+        font-size: 40px;
+    }
+    .you{
+        font-size: 60px;
+    }
+}
+@media(max-width:632px){
+    .text_container{
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 70px;
+        
+    }
+    .text_container h1,h2{
+        font-size: 16px;
+    }
+    .hi,.dev{
+        font-size: 30px;
+    }
+    .box1 h2{
+        font-size: 16px;
+    }
+    .you{
+        font-size: 20px;
+    }
+    .box1{
+        min-width: 30vh;
+    }
+}
