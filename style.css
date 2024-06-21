@@ -6,6 +6,7 @@
 html,body{
     line-height: 1.4;
     font-weight: 300;
+    
 }
 .hero_section{
     background-image: url("g2.jpg");
@@ -20,8 +21,8 @@ html,body{
     margin: 0 auto;
     padding-top: 64px;
     padding-left: 16px;
-    font-weight: 100;
-    font-size: 19px;
+    font-weight: bolder;
+    font-size: 22px;
 }
 .hi,.dev{
     font-size: 70px;
@@ -30,7 +31,7 @@ html,body{
 .text_container:hover{
     transform: scale(1.1);
     text-shadow: 10px 12px 10px #000;
-    transition: 0.6s ease-in-out;
+    transition: 0.4s ease-in;
     
 }
 
@@ -159,5 +160,15 @@ footer{
     }
     .box1{
         min-width: 30vh;
+    }
+    .bottom_section{
+        display: grid;
+        
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    }
+    .box1 h2:hover{
+       
+        transition: 0.5s ease-in-out;
+        transform: scale(1.3);
     }
 }
